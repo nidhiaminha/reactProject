@@ -90,7 +90,7 @@ class App extends Component {
   calculate = () => {
     let amount=this.state.someArray.filter(x=>x.name==="Avg Order Amount")[0].value;
     let number=this.state.someArray.filter(x=>x.name==="Avg Order Number")[0].value;
-    let percent=this.state.someArray.filter(x=>x.name==="Percentage To-Go")[0].value;
+    let percent=this.state.someArray.filter(x=>x.name==="Percentage To Go")[0].value;
     if (
       amount &&
       number &&
