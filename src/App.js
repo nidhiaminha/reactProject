@@ -52,7 +52,7 @@ class App extends Component {
           value:'',
           error:false,
           label:'required',
-          name:"Percentage To-Go",
+          name:"Percentage To Go",
           errorMsg: 'Enter values between 0-100',
           normalHelperText:'Enter percentage to-go orders',
           adornment:'%'
@@ -65,7 +65,7 @@ class App extends Component {
   }
 
   testHandle = e => {
-    let regex = e.target.name==='Percentage To-Go' ? /^([0-9](\.\d*){0,1}|[0-9][0-9](\.\d*){0,1}|[1][0][0])$/ : /^(\d*\.)?\d+$/ ; 
+    let regex = e.target.name==='Percentage To Go' ? /^([0-9](\.\d*){0,1}|[0-9][0-9](\.\d*){0,1}|[1][0][0])$/ : /^(\d*\.)?\d+$/ ; 
     let targName=e.target.name;
     let targValue=e.target.value;
     if(e.target.value==='' || regex.test(e.target.value)) {
