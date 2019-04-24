@@ -44,7 +44,7 @@ class App extends Component {
           value:'',
           error:false,
           label:'required',
-          name:"AvgOrderNumber",
+          name:"Avg Order Number",
           errorMsg: 'Please enter a valid input',
           normalHelperText:'Enter average number per month',
           adornment:'#'
@@ -65,7 +65,7 @@ class App extends Component {
   }
 
   testHandle = e => {
-    let regex = e.target.name==='percentageToGo' ? /^([0-9](\.\d*){0,1}|[0-9][0-9](\.\d*){0,1}|[1][0][0])$/ : /^(\d*\.)?\d+$/ ; 
+    let regex = e.target.name==='Percentage To-Go' ? /^([0-9](\.\d*){0,1}|[0-9][0-9](\.\d*){0,1}|[1][0][0])$/ : /^(\d*\.)?\d+$/ ; 
     let targName=e.target.name;
     let targValue=e.target.value;
     if(e.target.value==='' || regex.test(e.target.value)) {
