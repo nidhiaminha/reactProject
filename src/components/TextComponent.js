@@ -19,9 +19,6 @@ class TextComponent extends Component {
                 onChange={this.props.testChange}
                 margin="normal"
                 variant="outlined"
-                onInput = {(e) =>{
-                    e.target.value = Math.max(0, parseInt(e.target.value) ).toString().slice(0,10)
-                }}
                 InputProps={{
                     startAdornment: (
                     <InputAdornment position="start">{this.props.adornment}</InputAdornment>
